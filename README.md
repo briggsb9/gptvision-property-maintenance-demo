@@ -4,10 +4,11 @@ This project showcases how Generative AI can enhance the processing of property 
 
 It achieves this by:
 - Creating a sample SQL Database to simulate an existing maintenance request system
-- Using GPT-4 to generate text descriptions for case photos, offering a summary of the issue, the required tradesperson, and flagging cases where mould is present
-- Writing the GenAI insights back to the sample maintenance request system (SQL DB) and establishing an Azure AI Search index for text vector searches and Gen AI inference.
+- Using GPT-4 to generate text descriptions for case photos, offering a summary of the issue, the required tradesperson to fix, and a flag where mould is present
+- Writing the AI insights back to the sample maintenance request system for integration with existing frontends (PowerBI, WebApp etc)
+- Establishing an Azure AI Search index for text vector searches and Gen AI inference via chat interfaces
 
-The main objective is to act as an 'index generator,' rapidly providing a dataset for Azure AI exploration. This is **not** intended for production use.
+This is for demo purposes only.
 
 ## Table of Contents
 
@@ -205,7 +206,7 @@ Delete all deployed resources by running:
 
 ![AZD Down Example](./public/AZDDown.png)
 
-You will also be given the option to purge any soft deleted resources.
+You will also be given the option to purge any soft deleted resources. **Note**: This can take around 10 mins to complete.
 
 ## Troubleshooting
 
