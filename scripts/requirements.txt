@@ -1,0 +1,10 @@
+azure-identity==1.14.0
+azure-core
+azure-search-documents==11.6.0b4
+azure-storage-blob==12.17.0
+openai
+python-dotenv
+aiohttp
+aiofiles
+asyncio
+aioodbc
