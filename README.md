@@ -139,7 +139,7 @@ Then set the AZD environment variables to match your resources:
 6. Run `azd env set AZURE_OAI_GPTVISION_DEPLOYMENT_NAME {Name of existing GPT-4 Vision deployment}`
 8. Run `azd env set AZURE_BLOB_CONNECTION_STRING {Connection string for Azure Blob Storage}`
 9. Run `azd env set AZURE_SQL_SERVER {Name of existing Azure SQL server}`
-10. Run `azd env set AZURE_PYTHON_SQL_CONNECTION_STRING {SQL Connection string in the following format} 
+10. Run `azd env set AZURE_PYTHON_SQL_CONNECTION_STRING {SQL Connection string in the following format}`
 
     ```
     Driver={ODBC Driver 18 for SQL Server};Server=tcp:<YOUR_AZURE_SQL_SERVER_NAME>.database.windows.net,1433;Database=<YOUR_DATABASE_NAME>;UID=<YOUR_USER_NAME>;PWD=<YOUR_USER_PASSWORD>;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30`
@@ -165,9 +165,9 @@ Using Azure AI Studio requires a hub and project. Use [this guide](https://learn
 
 If you already have a hub and project, follow the instruction [here](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/connections-add) to add the Azure AI Search and/or OpenAI resources.
 
-To add your data to the chat playground carry out the following tasks.
+To add your data to the chat playground...
 1. Browse to your project and select 'Chat' from the left menu. 
-3. Ensure gpt 3.5 gpt-4-turbo or gpt-4o deployment is selected. If you have connected the OpenAI service from this project to your hub you should see the deployments in the list.
+3. Ensure gpt 3.5, gpt-4-turbo or gpt-4o deployment is selected. (If you've connected the OpenAI service from this project to your hub you should see the deployments in the list.)
 2. Select the 'Add your data' tab and click on 'Add a new Data Source'
 3. Select Azure AI Search as the data source. Click next.
 4. Select the AI Search Service and index created as part of this demo deployment. Click next.
