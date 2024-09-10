@@ -32,8 +32,7 @@ The main objective is to act as an 'index generator,' rapidly providing a datase
 
 After running the script, you can chat with the data in Azure AI Studio by using the "Add your data" feature in the chat playground:
 
-![AI Studio Demo](./public/propertyDemoAIStudio1.gif)
-<img src="./public/propertyDemoAIStudio1.gif" alt="AI Studio Demo" width="1109" height="559">
+<img src="https://github.com/briggsb9/gptvision-property-maintenance-demo/blob/main/public/PropertyDemoAIStudio1.gif" alt="AI Studio Demo" width="1109" height="559">
 
 ## View in PowerBI
 
