@@ -89,7 +89,7 @@ but you can also [set it up locally](#local-environment) if desired.
 
 You can run this repo virtually by using GitHub Codespaces, which will open a web-based VS Code in your browser:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/briggsb9/gptvision-property-maintenance-demo)
+[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=852890672&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
 
 Once the codespace opens (this may take several minutes), open a terminal window and skip to [Deploying](#deploying).
 
