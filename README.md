@@ -32,7 +32,7 @@ The main objective is to act as an 'index generator,' rapidly providing a datase
 
 After running the script, you can chat with the data in Azure AI Studio by using the "Add your data" feature in the chat playground:
 
-<img src="https://github.com/briggsb9/gptvision-property-maintenance-demo/blob/main/public/PropertyDemoAIStudio1.gif" alt="AI Studio Demo" width="1109" height="559">
+![AI Studio Demo](https://github.com/briggsb9/gptvision-property-maintenance-demo/blob/main/public/PropertyDemoAIStudio1.gif)
 
 ## View in PowerBI
 
@@ -93,7 +93,7 @@ You can run this repo virtually by using GitHub Codespaces, which will open a we
 
 [![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
 
-Once the codespace opens (this may take several minutes), open a terminal window.
+Once the codespace opens (this may take several minutes), open a terminal window and skip to [Deploying](#deploying).
 
 ### Local Environment
 
@@ -112,6 +112,10 @@ Finally, clone this repository to your local machine and move to the next sectio
 
 ## Deploying 
 
+### Permissions
+
+To deploy the Azure Resources you'll need Contributor rights at the subscription scope. Alternatively, You can use existing resources. See: [Using existing resources](#Using-existing-resources)
+
 ### Starting from scratch
 
 Execute the following commands, if you don't have any pre-existing Azure services and want to start from a fresh deployment.
@@ -125,7 +129,7 @@ Execute the following commands, if you don't have any pre-existing Azure service
 The following Azure resources are required:
 - **Azure Storage Account**: For storing images.
 - **Azure OpenAI Service**: To generate image descriptions and vector embeddings.
-- **Azure OpenAI models deployments**: `text-embedding-ada-002` and `gpt-4-turbo version turbo-2024-04-09`.
+    - **Azure OpenAI models deployments**: `text-embedding-ada-002` and `gpt-4-turbo version turbo-2024-04-09`.
 - **Azure AI Search**: To create and manage the search index.
 - **Azure SQL Database**: To create and store the sample data. A SQL user is required with db_owner permissions for the connection string.
 
@@ -135,7 +139,6 @@ Then set the AZD environment variables to match your resources:
 3. Run `azd env set AZURE_OAI_API_KEY {API key for Azure OpenAI service}`
 4. Run `azd env set AZURE_SEARCH_SERVICE_ENDPOINT {Endpoint of existing Azure AI Search service}`
 5. Run `azd env set AZURE_SEARCH_API_KEY {API key for Azure AI Search service}`
-6. Run `azd env set AZURE_SEARCH_SERVICE_NAME {Name of existing Azure AI Search service}`
 6. Run `azd env set AZURE_OAI_GPTVISION_DEPLOYMENT_NAME {Name of existing GPT-4 Vision deployment}`
 8. Run `azd env set AZURE_BLOB_CONNECTION_STRING {Connection string for Azure Blob Storage}`
 9. Run `azd env set AZURE_SQL_SERVER {Name of existing Azure SQL server}`
@@ -191,6 +194,13 @@ To add your data to the chat playground...
 Follow the guide [here](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-templates#using-report-templates) to open the report template located in the 'powerbi' folder in this repo.
 
 Connect to your DB - if not prompted select 'Transform Data > Data Source Settings' from the home menu and update the source and credentials. If you completed the full deployment from this project the SQL username is appuser and the password is stored in keyvault. 
+
+
+### Remove Resources
+
+Delete all deployed resources by running:
+
+`azd down`
 
 ### Notes
 
