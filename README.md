@@ -27,7 +27,7 @@ The main objective is to act as an 'index generator,' rapidly providing a datase
 
 ![property AI Demo Diagram](./public/Diagram.jpg)
 
-<img src="./public/Diagram.jpg" width="800">
+<img src="./public/Diagram.jpg" width="900">
 
 ## Chat with the Data
 
