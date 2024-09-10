@@ -20,8 +20,8 @@ The main objective is to act as an 'index generator,' rapidly providing a datase
 7. [Deploying](#deploying)
 8. [Connecting Azure AI Studio](#connecting-azure-ai-studio)
 8. [Connecting PowerBI](#connecting-powerbi)
-9. [Notes](#notes)
-10. [Troubleshooting](#troubleshooting)
+9. [Removing Resources](#removing-resources)
+9. [Troubleshooting](#troubleshooting)
 
 ## Architecture
 
@@ -196,7 +196,7 @@ Follow the guide [here](https://learn.microsoft.com/en-us/power-bi/create-report
 Connect to your DB - if not prompted select 'Transform Data > Data Source Settings' from the home menu and update the source and credentials. If you completed the full deployment from this project the SQL username is appuser and the password is stored in keyvault. 
 
 
-### Remove Resources
+## Removing Resources
 
 Delete all deployed resources by running:
 
@@ -204,7 +204,7 @@ Delete all deployed resources by running:
 
 You will be given the option to purge any soft deleted resources.
 
-### Troubleshooting
+## Troubleshooting
 
 - Ensure all environment variables are correctly set in the `.env` file.
 - Verify that your Azure resources (Storage Account, OpenAI Service, AI Search) are correctly configured and accessible.
