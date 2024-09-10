@@ -37,8 +37,7 @@ After running the script, you can chat with the data in Azure AI Studio by using
 
 Alternatively, you can leverage Power BI to visualize the data and gain insights into maintenance requests by connecting to the SQL Database:
 
-<img src="./public/PBIDashboardExample.png" alt="Power BI Report" width="960" height="534">
-
+![Power Bi Report](./public/PBIDashboardExample.png)
 
 ## Sample Data
 The photos located in the ./data folder are publicly sourced images of various property maintenance issues, such as broken windows, mould, blocked gutters, and water damage. Feel free to replace these with your own images if you wish to tailor the demonstration to your own property maintenance images . Only '.png', '.jpg', '.jpeg', '.gif' and '.bmp' file types are supported.
