@@ -210,7 +210,7 @@ async def create_dummy_database(pool, data_folder):
     try:
         tasks = []
         for entry in os.scandir(data_folder):
-            if entry.is_file() and entry.name.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp')):
+            if entry.is_file() and entry.name.lower().endswith(('.png', '.jpg', '.jpeg')):
                 image_path = os.path.join(data_folder, entry.name)
                 tasks.append(asyncio.create_task(process_image(pool, image_path, entry.name)))
         
@@ -276,7 +276,7 @@ async def generate_image_description(image_data):
         ],
         "temperature": 0.7,
         "top_p": 0.95,
-        "max_tokens": 800
+        "max_tokens": 2000
     }
     
     async with aiohttp.ClientSession() as session:

@@ -54,12 +54,12 @@ param openAiSkuName string // Set in main.parameters.json
 param openAiLocation string
 
 param embeddingDeploymentName string = 'text-embedding-ada-002'
-param embeddingDeploymentCapacity int = 450
+param embeddingDeploymentCapacity int = 30
 param embeddingModelName string = 'text-embedding-ada-002'
 param embeddingModelVersion string = '2'
 
 param gptVisionDeploymentName string = 'gpt-4-turbo'
-param gptVisionDeploymentCapacity int = 450
+param gptVisionDeploymentCapacity int = 50
 param gptVisionModelName string = 'gpt-4'
 param gptVisionModelVersion string = 'turbo-2024-04-09'
 

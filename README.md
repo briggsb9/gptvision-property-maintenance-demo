@@ -7,7 +7,7 @@ It achieves this by:
 - Using GPT-4 to generate text descriptions for case photos, offering a summary of the issue, the required tradesperson, and flagging cases where mould is present
 - Writing the GenAI insights back to the sample maintenance request system (SQL DB) and establishing an Azure AI Search index for text vector searches and Gen AI inference.
 
-The main objective is to act as an 'index generator,' rapidly providing a dataset for Azure AI exploration.
+The main objective is to act as an 'index generator,' rapidly providing a dataset for Azure AI exploration. This is **not** intended for production use.
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ Alternatively, you can leverage Power BI to visualize the data and gain insights
 ![Power Bi Report](./public/PBIDashboardExample.png)
 
 ## Sample Data
-The photos located in the ./data folder are publicly sourced images of various property maintenance issues, such as broken windows, mould, blocked gutters, and water damage. Feel free to replace these with your own images if you wish to tailor the demonstration to your own property maintenance images . Only '.png', '.jpg', '.jpeg', '.gif' and '.bmp' file types are supported.
+The photos located in the ./data folder are publicly sourced images of various property maintenance issues, such as broken windows, mould, blocked gutters, and water damage. Feel free to replace these with your own images if you wish to tailor the demonstration to your own property maintenance images . Only '.png', '.jpg', '.jpeg' file types are supported.
 
 Maintenance case data such as `CaseID` and `CustomerID` are randomly generated for each case/photo for simulation purposes. See field mappings in the [Processing](#processing) section for more details.
 
