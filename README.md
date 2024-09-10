@@ -97,6 +97,7 @@ Once the codespace opens (this may take several minutes), open a terminal window
 
 1. Install the required tools:
 
+    - [ODBC Driver](https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development?view=sql-server-ver16&tabs=windows#install-the-odbc-driver)
     - [Azure Developer CLI](https://aka.ms/azure-dev/install)
     - [Python 3.9, 3.10, or 3.11](https://www.python.org/downloads/)
       - **Important**: Python and the pip package manager must be in the path in Windows for the setup scripts to work.

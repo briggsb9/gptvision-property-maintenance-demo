@@ -22,7 +22,7 @@
     "forwardPorts": [
         // Forward ports if needed for local development
     ],
-    "postCreateCommand": "chmod +x ./scripts/prepdata.sh && sudo apt-get update && sudo apt-get install -y unixodbc-dev",
+    "postCreateCommand": "chmod +x ./scripts/prepdata.sh && sudo apt-get update && sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18 && sudo apt-get install -y unixodbc-dev",
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb"
