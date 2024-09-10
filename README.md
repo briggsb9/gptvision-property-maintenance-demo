@@ -89,7 +89,7 @@ but you can also [set it up locally](#local-environment) if desired.
 
 You can run this repo virtually by using GitHub Codespaces, which will open a web-based VS Code in your browser:
 
-[![Open in GitHub Codespaces](https://img.shields.io/static/v1?style=for-the-badge&label=GitHub+Codespaces&message=Open&color=brightgreen&logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=599293758&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&location=WestUs2)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/briggsb9/gptvision-property-maintenance-demo)
 
 Once the codespace opens (this may take several minutes), open a terminal window and skip to [Deploying](#deploying).
 
@@ -154,6 +154,8 @@ If you want to run the image and index process again, but don't need to re-provi
 
 `azd deploy`
 
+**Note:** this will delete and recreate the SQL data and index
+
 If you've changed the infrastructure files (`infra` folder or `azure.yaml`), then you'll need to re-provision the Azure resources. You can do that by running:
 
 `azd up`
@@ -200,10 +202,7 @@ Delete all deployed resources by running:
 
 `azd down`
 
-### Notes
-
-- The script will overwrite on each run.
-- The SQL password is stored in key vault
+You will be given the option to purge any soft deleted resources.
 
 ### Troubleshooting
 
