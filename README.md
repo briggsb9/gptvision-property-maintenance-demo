@@ -203,11 +203,12 @@ Delete all deployed resources by running:
 
 `azd down`
 
-You will be given the option to purge any soft deleted resources.
+![AZD Down Example](./public/AZDDown.png)
+
+You will also be given the option to purge any soft deleted resources.
 
 ## Troubleshooting
 
 - Ensure all environment variables are correctly set in the `.env` file.
 - Verify that your Azure resources (Storage Account, OpenAI Service, AI Search) are correctly configured and accessible.
 - Check the console output for any error messages and resolve them accordingly.
-
