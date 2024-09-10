@@ -22,7 +22,7 @@ This is for demo purposes only.
 8. [Connecting Azure AI Studio](#connecting-azure-ai-studio)
 8. [Connecting PowerBI](#connecting-powerbi)
 9. [Removing Resources](#removing-resources)
-9. [Troubleshooting](#troubleshooting)
+9. [Conclusion](#conclusion)
 
 ## Architecture
 
@@ -208,8 +208,6 @@ Delete all deployed resources by running:
 
 You will also be given the option to purge any soft deleted resources. **Note**: This can take around 10 mins to complete.
 
-## Troubleshooting
+## Conclusion
 
-- Ensure all environment variables are correctly set in the `.env` file.
-- Verify that your Azure resources (Storage Account, OpenAI Service, AI Search) are correctly configured and accessible.
-- Check the console output for any error messages and resolve them accordingly.
+With this repository, you should have gained a deeper understanding of how the process of enriching images with GenAI-generated descriptions is performed and how that enriched data can be presented across various channels.
