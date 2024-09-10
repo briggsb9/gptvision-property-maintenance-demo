@@ -126,9 +126,9 @@ Execute the following commands, if you don't have any pre-existing Azure service
 
 The following Azure resources are required:
 - **Azure Storage Account**: For storing images.
-- **Azure OpenAI Service**: To generate image descriptions and vector embeddings.
+- **Azure OpenAI Service**: To generate image descriptions and vector embeddings. Must be in a region that supports gpt-4-turbo version turbo-2024-04-09, check [here.](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#gpt-4-and-gpt-4-turbo-model-availability)
     - **Azure OpenAI models deployments**: `text-embedding-ada-002` and `gpt-4-turbo version turbo-2024-04-09`.
-- **Azure AI Search**: To create and manage the search index.
+- **Azure AI Search**: To create and manage the search index. Must be in a region that supports semantic ranking, check [here.](https://learn.microsoft.com/en-us/azure/search/search-region-support#azure-public-regions)  
 - **Azure SQL Database**: To create and store the sample data. A SQL user is required with db_owner permissions for the connection string.
 
 Then set the AZD environment variables to match your resources: 
