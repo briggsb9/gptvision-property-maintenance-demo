@@ -21,9 +21,8 @@
     },
     "forwardPorts": [
         // Forward ports if needed for local development
-        5000
     ],
-    "postCreateCommand": "",
+    "postCreateCommand": "chmod +x ./scripts/prepdata.sh",
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb"
