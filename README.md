@@ -126,6 +126,8 @@ Execute the following commands, if you don't have any pre-existing Azure service
 
 ### Using existing resources
 
+Follow the steps below if using your own Azure resources. If you executed the 'start from scratch' commands above, this step should be skipped.
+
 The following Azure resources are required:
 - **Azure Storage Account**: For storing images.
 - **Azure OpenAI Service**: To generate image descriptions and vector embeddings. Must be in a region that supports gpt-4-turbo version turbo-2024-04-09, check [here.](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#gpt-4-and-gpt-4-turbo-model-availability)
@@ -145,7 +147,7 @@ Then set the AZD environment variables to match your resources:
 10. Run `azd env set AZURE_PYTHON_SQL_CONNECTION_STRING {SQL Connection string in the following format}`
 
     ```
-    Driver={ODBC Driver 18 for SQL Server};Server=tcp:<YOUR_AZURE_SQL_SERVER_NAME>.database.windows.net,1433;Database=<YOUR_DATABASE_NAME>;UID=<YOUR_USER_NAME>;PWD=<YOUR_USER_PASSWORD>;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30`
+    Driver={ODBC Driver 18 for SQL Server};Server=tcp:<YOUR_AZURE_SQL_SERVER_NAME>.database.windows.net,1433;Database=<YOUR_DATABASE_NAME>;UID=<YOUR_USER_NAME>;PWD=<YOUR_USER_PASSWORD>;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30
     ```
 
 11. Run `azd deploy`
@@ -195,7 +197,7 @@ To add your data to the chat playground...
 
 Follow the guide [here](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-templates#using-report-templates) to open the report template located in the 'powerbi' folder in this repo.
 
-Connect to your DB - if not prompted select 'Transform Data > Data Source Settings' from the home menu and update the source and credentials. If you completed the full deployment from this project the SQL username is appuser and the password is stored in keyvault. 
+Connect to your DB - if not prompted select 'Transform Data > Data Source Settings' from the home menu and update the source and credentials. If you completed the full deployment from this project the SQL username is appuser and the password is stored in keyvault. Ensure you change the SQL database name to your own. 
 
 
 ## Removing Resources
