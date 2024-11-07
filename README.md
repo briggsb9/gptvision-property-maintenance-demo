@@ -197,7 +197,7 @@ To add your data to the chat playground...
 
 Follow the guide [here](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-templates#using-report-templates) to open the report template located in the 'powerbi' folder in this repo.
 
-Connect to your DB - if not prompted select 'Transform Data > Data Source Settings' from the home menu and update the source and credentials. If you completed the full deployment from this project the SQL username is appuser and the password is stored in keyvault. Ensure you change the SQL database name to your own. 
+Connect to your DB - if not prompted select 'Transform Data > Data Source Settings' from the home menu and update the SQL server/database name and credentials. If you completed the full deployment from this project, the SQL username is appuser and the password is stored in keyvault. Use the following [guide](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide?tabs=azure-cli#using-azure-rbac-secret-key-and-certificate-permissions-with-key-vault) to give yourself 'Keyvault secret user' permissions to access the secrets.  
 
 
 ## Removing Resources
